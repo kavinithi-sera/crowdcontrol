@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
-from app.api.routes import crowd
+from app.api.routes import crowd, navigation
 from app.services.crowd_service import crowd_service
 
 @asynccontextmanager
@@ -27,6 +27,7 @@ app.add_middleware(
 
 # Include routers
 app.include_router(crowd.router, tags=["CrowdLens"])
+app.include_router(navigation.router, tags=["Navigation"])
 
 @app.get("/")
 def read_root():
