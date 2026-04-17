@@ -4,11 +4,11 @@ import google.generativeai as genai
 from pydantic import BaseModel
 from typing import List
 
-# Setup Gemini
-gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+# Setup Gemini (using the existing initialized key from env if available, or relying on main setup)
+# For simplicity, we just configure it here again or assume it's configured.
+gemini_api_key = os.getenv("GEMINI_API_KEY")
 if gemini_api_key:
     genai.configure(api_key=gemini_api_key)
-
 
 class FanProfile(BaseModel):
     current_zone: str
