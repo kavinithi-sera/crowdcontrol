@@ -4,7 +4,7 @@ from app.services.queue_service import queue_service
 
 router = APIRouter(prefix="/api/queues", tags=["QueueSense"])
 
-@router.get("/")
+@router.get("")
 async def get_all_queues():
     """Returns all service points with current wait times and sparkline histories"""
     return {"queues": queue_service.get_all_queues_with_history()}

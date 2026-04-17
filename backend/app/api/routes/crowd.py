@@ -4,6 +4,7 @@ from app.models.schemas import CrowdSnapshot, ZoneDetail
 
 router = APIRouter()
 
+@router.get("/api/crowd/status")
 @router.get("/api/crowd/snapshot", response_model=CrowdSnapshot)
 async def get_crowd_snapshot():
     """Returns the current density snapshot for all zones"""

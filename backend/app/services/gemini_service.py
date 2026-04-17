@@ -5,9 +5,10 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 # Set up the Google Gemini API client
-gemini_api_key = os.getenv("GEMINI_API_KEY")
+gemini_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
 if gemini_api_key:
     genai.configure(api_key=gemini_api_key)
+
 
 class RouteStep(BaseModel):
     instruction: str

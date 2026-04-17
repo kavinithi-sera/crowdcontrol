@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
-from app.api.routes import crowd, navigation, queue
+from app.api.routes import crowd, navigation, queue, recommendations
 from app.services.crowd_service import crowd_service
 from app.services.queue_service import queue_service
 
@@ -32,8 +32,10 @@ app.add_middleware(
 app.include_router(crowd.router, tags=["CrowdLens"])
 app.include_router(navigation.router, tags=["Navigation"])
 app.include_router(queue.router, tags=["QueueSense"])
+app.include_router(recommendations.router, tags=["FanPulse"])
 
 @app.get("/")
 def read_root():
     return {"message": "Welcome to CrowdControl API"}
+
 
