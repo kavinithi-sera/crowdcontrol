@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { LineChart, Line, ResponsiveContainer } from "recharts";
+import { API_BASE, WS_BASE } from "@/config";
 
 interface QueueHistory {
   value: number;
@@ -26,7 +27,7 @@ export default function QueuePage() {
 
   useEffect(() => {
     // Initial fetch
-    fetch("http://localhost:8000/api/queues")
+    fetch(`${API_BASE}/api/queues`)
       .then(res => res.json())
       .then(data => {
         setQueues(data.queues);
@@ -35,7 +36,7 @@ export default function QueuePage() {
       .catch(err => console.error("Failed to load initial queues:", err));
 
     // Connect WebSocket for live updates
-    const ws = new WebSocket("ws://localhost:8000/api/queues/ws");
+    const ws = new WebSocket(`${WS_BASE}/api/queues/ws`);
     
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);

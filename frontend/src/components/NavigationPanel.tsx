@@ -37,6 +37,8 @@ interface Destination {
   zone: string;
 }
 
+import { API_BASE } from "@/config";
+
 export default function NavigationPanel() {
   const [isOpen, setIsOpen] = useState(false);
   const [destinations, setDestinations] = useState<Destination[]>([]);
@@ -50,7 +52,7 @@ export default function NavigationPanel() {
   const userLocation = "A";
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/navigation/destinations")
+    fetch(`${API_BASE}/api/navigation/destinations`)
       .then(res => res.json())
       .then(data => setDestinations(data.destinations))
       .catch(err => console.error("Failed to load destinations:", err));
@@ -65,7 +67,7 @@ export default function NavigationPanel() {
     setActiveTab("steps");
 
     try {
-      const response = await fetch("http://localhost:8000/api/navigation/navigate", {
+      const response = await fetch(`${API_BASE}/api/navigation/navigate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

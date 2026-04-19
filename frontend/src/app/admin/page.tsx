@@ -45,9 +45,11 @@ interface AdminOverview {
   summary: Summary;
 }
 
+import { API_BASE, WS_BASE } from "@/config";
+
 // ── Constants ─────────────────────────────────────────────────────────────────
-const API = "http://localhost:8000";
-const WS_CROWD = "ws://localhost:8000/ws/crowd";
+const API = API_BASE;
+const WS_CROWD = `${WS_BASE}/ws/crowd`;
 const RECONNECT_DELAY = 3000;
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

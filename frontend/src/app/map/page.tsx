@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { API_BASE, WS_BASE } from "@/config";
 
 interface ZoneData {
   zone_id: string;
@@ -26,12 +27,12 @@ export default function MapPage() {
   const [hoveredZone, setHoveredZone] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/crowd/snapshot")
+    fetch(`${API_BASE}/api/crowd/snapshot`)
       .then((res) => res.json())
       .then((data) => setSnapshot(data))
       .catch((err) => console.error("Failed to fetch initial snapshot:", err));
 
-    const ws = new WebSocket("ws://localhost:8000/ws/crowd");
+    const ws = new WebSocket(`${WS_BASE}/ws/crowd`);
     
     ws.onopen = () => setConnected(true);
     ws.onmessage = (event) => {

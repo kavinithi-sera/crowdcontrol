@@ -23,9 +23,11 @@ interface ChatMessage {
   content: string;
 }
 
+import { API_BASE, WS_BASE } from "@/config";
+
 // ── Constants ─────────────────────────────────────────────────────────────────
-const API = "http://localhost:8000";
-const WS_URL = "ws://localhost:8000/ws/crowd";
+const API = API_BASE;
+const WS_URL = `${WS_BASE}/ws/crowd`;
 const RECONNECT_DELAY = 3000;
 
 const MODULES = [
