@@ -113,7 +113,7 @@ function Chatbot({ onClose }: { onClose: () => void }) {
   };
 
   return (
-    <div className="fixed bottom-28 right-6 z-50 w-[360px] max-h-[520px] flex flex-col rounded-3xl overflow-hidden shadow-2xl shadow-black/60"
+    <div className="fixed bottom-40 right-6 z-50 w-[360px] max-h-[520px] flex flex-col rounded-3xl overflow-hidden shadow-2xl shadow-black/60"
          style={{ background: "rgba(10,14,30,0.95)", backdropFilter: "blur(24px)", border: "1px solid rgba(139,92,246,0.25)" }}>
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-4 border-b border-white/5"

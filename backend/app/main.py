@@ -1,6 +1,14 @@
+from dotenv import load_dotenv
+import os
+import logging
 import asyncio
 import time
-import logging
+from pathlib import Path
+
+# Load environment variables at the very beginning
+_backend_root = Path(__file__).resolve().parent.parent
+load_dotenv(dotenv_path=_backend_root / ".env", override=True)
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
