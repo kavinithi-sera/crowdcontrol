@@ -11,21 +11,6 @@
 ![Built with](https://img.shields.io/badge/Built%20with-Google%20Antigravity-FF6D00?logo=google&logoColor=white)
 
 ---
-
-## 🌐 Live Demo
-
-**[https://crowd-frontend-987426744408.us-central1.run.app](https://crowd-frontend-987426744408.us-central1.run.app)**
-
-| Module | URL |
-|---|---|
-| 🏠 Home | `/` |
-| 🔴 CrowdLens | `/map` |
-| ⏱️ QueueSense | `/queue` |
-| ⚡ FanPulse | `/recommendations` |
-| 🛡️ Admin Portal | `/admin` |
-
----
-
 ## 📖 What is CrowdControl?
 
 CrowdControl is a real-time AI-powered stadium management and fan experience platform built for large-scale sporting venues. It combines live crowd intelligence, Gemini-powered navigation, predictive queue modelling, and personalised fan recommendations — all accessible from a single mobile-first web app.
@@ -75,6 +60,22 @@ CrowdControl is a real-time AI-powered stadium management and fan experience pla
 - Queue length overview for all 8 service points
 - Automated alert feed: zones exceeding 85% capacity trigger deployment recommendations
 - Manual zone override: staff can mark zones as "Closed" to reroute navigation AI
+
+---
+
+## 🌐 Live Demo
+
+**[https://crowd-frontend-987426744408.us-central1.run.app](https://crowd-frontend-987426744408.us-central1.run.app)**
+
+**[https://www.loom.com/share/9e90eba7bc3d43e999925f2919f6aa39](https://www.loom.com/share/9e90eba7bc3d43e999925f2919f6aa39)**
+
+| Module | URL |
+|---|---|
+| 🏠 Home | `/` |
+| 🔴 CrowdLens | `/map` |
+| ⏱️ QueueSense | `/queue` |
+| ⚡ FanPulse | `/recommendations` |
+| 🛡️ Admin Portal | `/admin` |
 
 ---
 
@@ -267,13 +268,6 @@ Wait Time = Queue Length / (Service Rate - Arrival Rate)
 
 This is the same mathematical model used in telecommunications, hospital management, and airport operations — applied here in real time to stadium service points, giving fans accurate, science-backed wait predictions rather than guesswork.
 
----
-
-## 🏆 Built For
-
-**Code With Antigravity Hackathon** — A global online hackathon designed to push creativity, problem-solving, and futuristic thinking using Google's Antigravity IDE and the Gemini 3 model family.
-
-**Category:** Physical Event Experience | Sporting Venues
 
 ---
 
@@ -291,6 +285,6 @@ This project is licensed under the MIT License.
 
 ## 👥 Team
 
-Built with ❤️ using **Google Antigravity** — the agent-first IDE powered by Gemini 3.
+Built using **Google Antigravity** — the agent-first IDE powered by Gemini 3.
 
 > *"Your venue, intelligently guided."*
