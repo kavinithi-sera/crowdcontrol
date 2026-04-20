@@ -140,7 +140,7 @@ CrowdControl
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/crowdcontrol.git
+git clone https://github.com/kavinithi-sera/crowdcontrol.git
 cd crowdcontrol
 ```
 
