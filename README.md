@@ -1,7 +1,6 @@
 # 🏟️ CrowdControl
 ### *AI-Powered Smart Stadium Experience Platform*
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-14-000000?logo=next.js&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi&logoColor=white)
@@ -13,11 +12,11 @@
 ---
 ## 📖 What is CrowdControl?
 
-CrowdControl is a real-time AI-powered stadium management and fan experience platform built for large-scale sporting venues. It combines live crowd intelligence, Gemini-powered navigation, predictive queue modelling, and personalised fan recommendations — all accessible from a single mobile-first web app.
+CrowdControl is a real-time AI-powered stadium management and fan experience platform built for large-scale sporting venues. It combines live crowd intelligence, Gemini-powered navigation, predictive queue modelling, and personalised fan recommendations, all accessible from a single mobile-first web app.
 
 **The Problem:** Attending a major sporting event often means navigating packed corridors, waiting in long queues, missing out on deals, and struggling to find your way around an unfamiliar venue.
 
-**The Solution:** CrowdControl gives every fan a real-time AI co-pilot and gives venue staff a live operational command centre — turning chaos into a seamlessly guided experience.
+**The Solution:** CrowdControl gives every fan a real-time AI co-pilot and gives venue staff a live operational command centre, turning chaos into a seamlessly guided experience.
 
 ---
 
@@ -277,14 +276,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 ## 👥 Team
 
-Built using **Google Antigravity** — the agent-first IDE powered by Gemini 3.
+Built using **Google Antigravity** — the agent-first IDE developed by Google.
 
-> *"Your venue, intelligently guided."*
